@@ -1,80 +1,66 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sorol</title>
-  <!-- daisyui -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <!-- tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: "#58BA9C",
-            light: "#e8fae5",
-            secondary: "#6BBC3B",
-            main: "#1DD100",
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorol</title>
+    <!-- daisyui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#58BA9C",
+              light: "#e8fae5",
+              secondary: "#6BBC3B",
+              main: "#1DD100",
+            },
           },
         },
-      },
-    };
-  </script>
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/374ce514ab.js" crossorigin="anonymous"></script>
-  <!-- font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
-  <style>
-    .font-outfit {
-      font-family: "Outfit", system-ui;
-    }
-  </style>
-</head>
+      };
+    </script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/374ce514ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-outfit {
+        font-family: "Outfit", system-ui;
+      }
+    </style>
+  </head>
 
-<body class="font-outfit">
-  <header class="container mx-auto">
-    <!-- nav start -->
-    <div class="navbar bg-base-100 flex justify-between items-center bg-transparent py-6">
-      <div>
-        <div class="flex items-center gap-2">
-          <img src="./images/logo.png" alt="" />
-          <a class="text-3xl font-extrabold text-dark1">SOROL</a>
-        </div>
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1 text-base text-dark3 space-x-10 font-semibold">
-          <li>
-            <a class="hover:text-primary duration-300 ease-in-out">Home</a>
-          </li>
-          <li>
-            <a class="hover:text-primary duration-300 ease-in-out">About</a>
-          </li>
-          <li>
-            <a class="hover:text-primary duration-300 ease-in-out">Destination</a>
-          </li>
-          <li>
-            <a class="hover:text-primary duration-300 ease-in-out">Search</a>
-          </li>
-        </ul>
-      </div>
-      <div class="flex gap-5 justify-between">
-        <a class="hidden md:flex btn font-extrabold text-xl bg-[#e8fae5] text-primary border-2 border-primary">Bus
-          <img src="./images/bus-icon.png" alt="" />
-        </a>
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost bg-primary lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
+  <body class="font-outfit">
+    <header class="container mx-auto">
+      <!-- nav start -->
+      <div
+        class="navbar bg-base-100 flex justify-between items-center bg-transparent py-6"
+      >
+        <div>
+          <div class="flex items-center gap-2">
+            <img src="./images/logo.png" alt="" />
+            <a class="text-3xl font-extrabold text-dark1">SOROL</a>
           </div>
-          <ul tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-dark2 right-0">
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul
+            class="menu menu-horizontal px-1 text-base text-dark3 space-x-10 font-semibold"
+          >
             <li>
               <a class="hover:text-primary duration-300 ease-in-out">Home</a>
             </li>
@@ -82,500 +68,702 @@
               <a class="hover:text-primary duration-300 ease-in-out">About</a>
             </li>
             <li>
-              <a class="hover:text-primary duration-300 ease-in-out">Destination</a>
+              <a class="hover:text-primary duration-300 ease-in-out"
+                >Destination</a
+              >
             </li>
             <li>
               <a class="hover:text-primary duration-300 ease-in-out">Search</a>
             </li>
           </ul>
         </div>
+        <div class="flex gap-5 justify-between">
+          <a
+            class="hidden md:flex btn font-extrabold text-xl bg-[#e8fae5] text-primary border-2 border-primary"
+            >Bus
+            <img src="./images/bus-icon.png" alt="" />
+          </a>
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost bg-primary lg:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-dark2 right-0"
+            >
+              <li>
+                <a class="hover:text-primary duration-300 ease-in-out">Home</a>
+              </li>
+              <li>
+                <a class="hover:text-primary duration-300 ease-in-out">About</a>
+              </li>
+              <li>
+                <a class="hover:text-primary duration-300 ease-in-out"
+                  >Destination</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary duration-300 ease-in-out"
+                  >Search</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-    <!-- nav end -->
-    <!-- banner start -->
-    <div class="flex flex-col justify-center items-center">
-      <div class="md:w-7/12 mx-auto">
-        <img src="./images/bus-01.png" alt="" />
-      </div>
-      <div>
-        <h3 class="font-extrabold text-6xl text-center mb-6">
-          End-to-End Travel With SOROL
-        </h3>
-      </div>
+      <!-- nav end -->
+      <!-- banner start -->
+      <div class="flex flex-col justify-center items-center">
+        <div class="md:w-7/12 mx-auto">
+          <img src="./images/bus-01.png" alt="" />
+        </div>
+        <div>
+          <h3 class="font-extrabold text-6xl text-center mb-6">
+            End-to-End Travel With SOROL
+          </h3>
+        </div>
 
-      <button class="btn bg-main text-xl font-bold">Buy Ticket</button>
-      <!-- card -->
-      <div class="my-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="card card-side bg-base-100 shadow-xl items-center border-t-4 border-primary">
-          <figure class="pl-3">
-            <i class="fa-solid fa-users text-6xl text-primary"></i>
-          </figure>
-          <div class="card-body">
-            <h2 class="text-4xl font-bold">500k+</h2>
-            <p>Registered Users</p>
+        <button class="btn bg-main text-xl font-bold">Buy Ticket</button>
+        <!-- card -->
+        <div class="my-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="card card-side bg-base-100 shadow-xl items-center border-t-4 border-primary"
+          >
+            <figure class="pl-3">
+              <i class="fa-solid fa-users text-6xl text-primary"></i>
+            </figure>
+            <div class="card-body">
+              <h2 class="text-4xl font-bold">500k+</h2>
+              <p>Registered Users</p>
+            </div>
           </div>
-        </div>
-        <div class="card card-side bg-base-100 shadow-xl items-center border-t-4 border-primary">
-          <figure class="pl-3">
-            <i class="fa-solid fa-ticket text-6xl text-primary"></i>
-          </figure>
-          <div class="card-body">
-            <h2 class="text-4xl font-bold">1.7lak+</h2>
-            <p>Tickets Sold</p>
+          <div
+            class="card card-side bg-base-100 shadow-xl items-center border-t-4 border-primary"
+          >
+            <figure class="pl-3">
+              <i class="fa-solid fa-ticket text-6xl text-primary"></i>
+            </figure>
+            <div class="card-body">
+              <h2 class="text-4xl font-bold">1.7lak+</h2>
+              <p>Tickets Sold</p>
+            </div>
           </div>
-        </div>
-        <div class="card card-side bg-base-100 shadow-xl items-center border-t-4 border-primary hidden lg:flex">
-          <figure class="pl-3">
-            <i class="fa-solid fa-bus-simple text-6xl text-primary"></i>
-          </figure>
-          <div class="card-body">
-            <h2 class="text-4xl font-bold">80k+</h2>
-            <p>Rental Partners</p>
+          <div
+            class="card card-side bg-base-100 shadow-xl items-center border-t-4 border-primary hidden lg:flex"
+          >
+            <figure class="pl-3">
+              <i class="fa-solid fa-bus-simple text-6xl text-primary"></i>
+            </figure>
+            <div class="card-body">
+              <h2 class="text-4xl font-bold">80k+</h2>
+              <p>Rental Partners</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- banner end -->
-  </header>
-  <main>
-    <!-- coupon -->
-    <section class="container mx-auto my-24 flex flex-col justify-center items-center gap-10">
-      <h2 class="font-bold text-5xl text-center">Best Offer For You</h2>
-      <div class="flex flex-col lg:flex-row gap-6">
-        <div class="bg-secondary rounded-3xl flex gap-6 items-center">
-          <div class="space-y-2 pl-10">
-            <h3 class="font-extrabold text-4xl">15% OFF</h3>
-            <p class="font-bold">on your next purchase</p>
-            <p>use by January 2025</p>
-          </div>
-          <div>
-            <img src="./images/cupon-devider.png" alt="" />
-          </div>
-          <div class="space-y-2 pr-10">
-            <h3 class="font-extrabold text-2xl">NEW15</h3>
-            <p class="font-bold">Coupon Code</p>
-          </div>
-        </div>
-        <div class="bg-secondary rounded-3xl flex gap-6 items-center">
-          <div class="space-y-2 pl-10">
-            <h3 class="font-extrabold text-4xl">20% OFF</h3>
-            <p class="font-bold">on your next purchase</p>
-            <p>use by January 2025</p>
-          </div>
-          <div>
-            <img src="./images/cupon-devider.png" alt="" />
-          </div>
-          <div class="space-y-2 pr-10">
-            <h3 class="font-extrabold text-2xl">COUPLE20</h3>
-            <p class="font-bold">Coupon Code</p>
-          </div>
-        </div>
-      </div>
-      <button class="btn font-extrabold text-xl bg-[#e8fae5] text-primary border-2 border-primary">
-        See All Offers
-      </button>
-    </section>
-    <!-- background -->
-    <section class="bg-[#F7F8F8] rounded-t-3xl border-t-4 border-primary">
-      <!-- destination -->
-      <section class="py-20 container mx-auto space-y-6">
-        <h2 class="font-bold text-5xl text-center">SOROL Express</h2>
-        <p class="text-gray-500 text-center">
-          Buy ticket at comfort of your home without any hassle.
-        </p>
-        <div class="bg-white grid grid-cols-4">
-          <div class="col-span-3 p-6 space-y-6">
-            <div class="flex justify-between">
-              <div class="flex gap-3 justify-center items-center">
-                <div>
-                  <img src="./images/bus-logo.png" alt="" />
-                </div>
-                <div>
-                  <h1 class="font-bold text-3xl">Greenline Paribahan</h1>
-                  <p>Coach-009-WEB ! AC_Business</p>
-                </div>
-              </div>
-              <div class="flex gap-2 bg-light p-3 rounded-xl items-center">
-                <img src="./images/seat-green.png" alt="" />
-                <p class="font-bold text-main text-xl">
-                  <span>40</span>
-                  <span>seats left</span>
-                </p>
-              </div>
+      <!-- banner end -->
+    </header>
+    <main>
+      <!-- coupon -->
+      <section
+        class="container mx-auto my-24 flex flex-col justify-center items-center gap-10"
+      >
+        <h2 class="font-bold text-5xl text-center">Best Offer For You</h2>
+        <div class="flex flex-col lg:flex-row gap-6">
+          <div class="bg-secondary rounded-3xl flex gap-6 items-center">
+            <div class="space-y-2 pl-10">
+              <h3 class="font-extrabold text-4xl">15% OFF</h3>
+              <p class="font-bold">on your next purchase</p>
+              <p>use by January 2025</p>
             </div>
-            <div class="bg-light p-10 rounded-3xl">
-              <div class="flex justify-between border-b-2 border-dashed border-gray-400 pb-4">
-                <p class="font-medium text-lg text-gray-500">Route</p>
-                <p class="font-semibold text-xl">Dhaka-Sylhet</p>
-              </div>
-              <div class="flex justify-between border-b-2 border-dashed border-gray-400 py-4 mb-6">
-                <p class="font-medium text-lg text-gray-500">
-                  Departure Time
-                </p>
-                <p class="font-semibold text-xl">9:00 PM</p>
-              </div>
-              <div class="flex justify-between">
-                <button class="btn btn-large font-medium text-lg text-gray-500 bg-slate-300">
-                  Boarding Point - Laxmipur
-                </button>
-                <button class="btn btn-large font-medium text-lg text-gray-500 bg-slate-300">
-                  Dropping Point - Bogura
-                </button>
-                <button class="btn btn-large font-medium text-lg text-gray-500 bg-slate-300">
-                  Est. Time - 11 Hour
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="flex">
             <div>
-              <img src="./images/info-devider.png" alt="" />
+              <img src="./images/cupon-devider.png" alt="" />
             </div>
-            <div class="flex justify-center flex-col items-center p-6">
-              <div><img src="./images/fare.png" alt="" /></div>
+            <div class="space-y-2 pr-10">
+              <h3 class="font-extrabold text-2xl">NEW15</h3>
+              <p class="font-bold">Coupon Code</p>
+            </div>
+          </div>
+          <div class="bg-secondary rounded-3xl flex gap-6 items-center">
+            <div class="space-y-2 pl-10">
+              <h3 class="font-extrabold text-4xl">20% OFF</h3>
+              <p class="font-bold">on your next purchase</p>
+              <p>use by January 2025</p>
+            </div>
+            <div>
+              <img src="./images/cupon-devider.png" alt="" />
+            </div>
+            <div class="space-y-2 pr-10">
+              <h3 class="font-extrabold text-2xl">COUPLE20</h3>
+              <p class="font-bold">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="btn font-extrabold text-xl bg-[#e8fae5] text-primary border-2 border-primary"
+        >
+          See All Offers
+        </button>
+      </section>
+      <!-- background -->
+      <section class="bg-[#F7F8F8] rounded-t-3xl border-t-4 border-primary">
+        <!-- destination -->
+        <section class="py-20 container mx-auto space-y-6">
+          <h2 class="font-bold text-5xl text-center">SOROL Express</h2>
+          <p class="text-gray-500 text-center">
+            Buy ticket at comfort of your home without any hassle.
+          </p>
+          <div class="bg-white grid grid-cols-4">
+            <div class="col-span-3 p-6 space-y-6">
+              <div class="flex justify-between">
+                <div class="flex gap-3 justify-center items-center">
+                  <div>
+                    <img src="./images/bus-logo.png" alt="" />
+                  </div>
+                  <div>
+                    <h1 class="font-bold text-3xl">Greenline Paribahan</h1>
+                    <p>Coach-009-WEB ! AC_Business</p>
+                  </div>
+                </div>
+                <div class="flex gap-2 bg-light p-3 rounded-xl items-center">
+                  <img src="./images/seat-green.png" alt="" />
+                  <p class="font-bold text-main text-xl">
+                    <span id="totalSeat">40</span>
+                    <span>seats left</span>
+                  </p>
+                </div>
+              </div>
+              <div class="bg-light p-10 rounded-3xl">
+                <div
+                  class="flex justify-between border-b-2 border-dashed border-gray-400 pb-4"
+                >
+                  <p class="font-medium text-lg text-gray-500">Route</p>
+                  <p class="font-semibold text-xl">Dhaka-Sylhet</p>
+                </div>
+                <div
+                  class="flex justify-between border-b-2 border-dashed border-gray-400 py-4 mb-6"
+                >
+                  <p class="font-medium text-lg text-gray-500">
+                    Departure Time
+                  </p>
+                  <p class="font-semibold text-xl">9:00 PM</p>
+                </div>
+                <div class="flex justify-between">
+                  <button
+                    class="btn btn-large font-medium text-lg text-gray-500 bg-slate-300"
+                  >
+                    Boarding Point - Laxmipur
+                  </button>
+                  <button
+                    class="btn btn-large font-medium text-lg text-gray-500 bg-slate-300"
+                  >
+                    Dropping Point - Bogura
+                  </button>
+                  <button
+                    class="btn btn-large font-medium text-lg text-gray-500 bg-slate-300"
+                  >
+                    Est. Time - 11 Hour
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex">
+              <div>
+                <img src="./images/info-devider.png" alt="" />
+              </div>
+              <div class="flex justify-center flex-col items-center p-6">
+                <div><img src="./images/fare.png" alt="" /></div>
 
-              <h3 class="font-bold text-3xl">550 Taka</h3>
-              <p>Per Seat</p>
+                <h3 class="font-bold text-3xl">550 Taka</h3>
+                <p>Per Seat</p>
+              </div>
             </div>
+          </div>
+        </section>
+        <!-- seat section -->
+        <div class="grid grid-cols-3 bg-white rounded-xl p-6 container mx-auto">
+          <!-- left -->
+          <div class="col-span-2">
+            <div>
+              <h3
+                class="font-semibold text-xl pb-6 border-b-2 border-dashed border-gray-400"
+              >
+                Select Your Seat
+              </h3>
+            </div>
+            <div
+              class="flex justify-between py-6 border-b-2 border-dashed border-gray-400"
+            >
+              <div class="flex">
+                <img src="./images/seat-gray.png" alt="" />
+                <p class="font-medium text-gray-500 text-lg">Available</p>
+              </div>
+              <div class="flex">
+                <img src="./images/seat-green.png" alt="" />
+                <p class="font-medium text-main text-lg">Selected</p>
+              </div>
+            </div>
+            <!-- seat plane -->
+            <div class="grid grid-cols-10 gap-6 my-6">
+              <!-- row0 -->
+              <div class="col-span-8"></div>
+              <div class="col-span-2">
+                <button class="btn w-full">
+                  <i class="fa-solid fa-user text-xl"></i>
+                </button>
+              </div>
+              <!-- row1 -->
+              <div>
+                <p class="text-gray-500 text-lg">A</p>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  A1
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  A2
+                </button>
+              </div>
+              <div></div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  A3
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  A4
+                </button>
+              </div>
+              <!-- row2 -->
+              <div>
+                <p class="text-gray-500 text-lg">B</p>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  B1
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  B2
+                </button>
+              </div>
+              <div></div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  B3
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  B4
+                </button>
+              </div>
+              <!-- row3 -->
+              <div>
+                <p class="text-gray-500 text-lg">C</p>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  C1
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  C2
+                </button>
+              </div>
+              <div></div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  C3
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  C4
+                </button>
+              </div>
+              <!-- row4 -->
+              <div>
+                <p class="text-gray-500 text-lg">D</p>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  D1
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  D2
+                </button>
+              </div>
+              <div></div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  D3
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  D4
+                </button>
+              </div>
+              <!-- row5 -->
+              <div>
+                <p class="text-gray-500 text-lg">E</p>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  E1
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  E2
+                </button>
+              </div>
+              <div></div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  E3
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  E4
+                </button>
+              </div>
+              <!-- row6 -->
+              <div>
+                <p class="text-gray-500 text-lg">F</p>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  F1
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  F2
+                </button>
+              </div>
+              <div></div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  F3
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  F4
+                </button>
+              </div>
+              <!-- row7 -->
+              <div>
+                <p class="text-gray-500 text-lg">G</p>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  G1
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  G2
+                </button>
+              </div>
+              <div></div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  G3
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  G4
+                </button>
+              </div>
+              <!-- row8 -->
+              <div>
+                <p class="text-gray-500 text-lg">H</p>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  H1
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  H2
+                </button>
+              </div>
+              <div></div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  H3
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  H4
+                </button>
+              </div>
+              <!-- row9 -->
+              <div>
+                <p class="text-gray-500 text-lg">I</p>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  I1
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  I2
+                </button>
+              </div>
+              <div></div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  I3
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  I4
+                </button>
+              </div>
+              <!-- row10 -->
+              <div>
+                <p class="text-gray-500 text-lg">J</p>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  J1
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  J2
+                </button>
+              </div>
+              <div></div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  J3
+                </button>
+              </div>
+              <div class="col-span-2">
+                <button
+                  onclick="seatSelected(this)"
+                  class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary"
+                >
+                  J4
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="border-l-2 border-dashed border-gray-400 pl-4 ml-4">
+            <div>
+              <h3
+                class="font-semibold text-xl pb-6 border-b-2 border-dashed border-gray-400"
+              >
+                Selected Seat
+              </h3>
+            </div>
+            <div>
+              <div class="flex justify-between my-6">
+                <p class="flex">
+                  <span class="font-medium text-lg">Seat</span>
+                  <span
+                    id="seatCount"
+                    class="bg-main text-white rounded-full w-4 h-4 p-2 text-center text-sm flex items-center justify-center"
+                    >0</span
+                  >
+                </p>
+                <p class="font-medium text-lg">Class</p>
+                <p class="font-medium text-lg">Price</p>
+              </div>
+              <div>
+                <ul id="seatLists" class="border-b-2 border-gray-400 pb-6 space-y-3">
+                  <li class="flex justify-between text-xl text-gray-500">
+                    <span>C2</span> <span>Economy</span> <span>550</span>
+                  </li>
+                  <li class="flex justify-between text-xl text-gray-500">
+                    <span>C2</span> <span>Economy</span> <span>550</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p class="flex justify-between text-xl font-bold mb-6">
+                  <span>Total Price</span>
+                  <span>BDT <span id="totalPrice">100</span></span>
+                </p>
+              </div>
+              <div class="flex gap-2 mb-6">
+                <input id="couponText"
+                  type="text"
+                  placeholder="Any Coupon?"
+                  class="input input-bordered w-full"
+                />
+                <button id="discountBtn" class="btn bg-main text-white">Apply</button>
+              </div>
+              <div>
+                <p class="flex justify-between text-xl font-bold text-gray-500">
+                  <span>Discount</span>
+                  <span>BDT <span id="discount">100</span></span>
+                </p>
+                <p class="flex justify-between text-xl font-bold">
+                  <span>Grand Total</span>
+                  <span>BDT <span id="grandPrice">100</span></span>
+                </p>
+              </div>
+            </div>
+            <div></div>
           </div>
         </div>
       </section>
-      <!-- seat section -->
-      <div class="grid grid-cols-3 bg-white rounded-xl p-6 container mx-auto">
-        <!-- left -->
-        <div class="col-span-2">
-          <div>
-            <h3 class="font-semibold text-xl pb-6 border-b-2 border-dashed border-gray-400">
-              Select Your Seat
-            </h3>
-          </div>
-          <div class="flex justify-between py-6 border-b-2 border-dashed border-gray-400">
-            <div class="flex">
-              <img src="./images/seat-gray.png" alt="" />
-              <p class="font-medium text-gray-500 text-lg">Available</p>
-            </div>
-            <div class="flex">
-              <img src="./images/seat-green.png" alt="" />
-              <p class="font-medium text-main text-lg">Selected</p>
-            </div>
-          </div>
-          <!-- seat plane -->
-          <div class="grid grid-cols-10 gap-6 my-6">
-            <!-- row0 -->
-            <div class="col-span-8"></div>
-            <div class="col-span-2">
-              <button class="btn w-full">
-                <i class="fa-solid fa-user text-xl"></i>
-              </button>
-            </div>
-            <!-- row1 -->
-            <div>
-              <p class="text-gray-500 text-lg">A</p>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                A1
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                A2
-              </button>
-            </div>
-            <div></div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                A3
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                A4
-              </button>
-            </div>
-            <!-- row2 -->
-            <div>
-              <p class="text-gray-500 text-lg">B</p>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                B1
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                B2
-              </button>
-            </div>
-            <div></div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                B3
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                B4
-              </button>
-            </div>
-            <!-- row3 -->
-            <div>
-              <p class="text-gray-500 text-lg">C</p>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                C1
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                C2
-              </button>
-            </div>
-            <div></div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                C3
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                C4
-              </button>
-            </div>
-            <!-- row4 -->
-            <div>
-              <p class="text-gray-500 text-lg">D</p>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                D1
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                D2
-              </button>
-            </div>
-            <div></div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                D3
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                D4
-              </button>
-            </div>
-            <!-- row5 -->
-            <div>
-              <p class="text-gray-500 text-lg">E</p>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                E1
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                E2
-              </button>
-            </div>
-            <div></div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                E3
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                E4
-              </button>
-            </div>
-            <!-- row6 -->
-            <div>
-              <p class="text-gray-500 text-lg">F</p>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                F1
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                F2
-              </button>
-            </div>
-            <div></div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                F3
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                F4
-              </button>
-            </div>
-            <!-- row7 -->
-            <div>
-              <p class="text-gray-500 text-lg">G</p>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                G1
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                G2
-              </button>
-            </div>
-            <div></div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                G3
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                G4
-              </button>
-            </div>
-            <!-- row8 -->
-            <div>
-              <p class="text-gray-500 text-lg">H</p>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                H1
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                H2
-              </button>
-            </div>
-            <div></div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                H3
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                H4
-              </button>
-            </div>
-            <!-- row9 -->
-            <div>
-              <p class="text-gray-500 text-lg">I</p>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                I1
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                I2
-              </button>
-            </div>
-            <div></div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                I3
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                I4
-              </button>
-            </div>
-            <!-- row10 -->
-            <div>
-              <p class="text-gray-500 text-lg">J</p>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                J1
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                J2
-              </button>
-            </div>
-            <div></div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                J3
-              </button>
-            </div>
-            <div class="col-span-2">
-              <button onclick="seatSelected(this)"
-                class="btn w-full text-gray-500 text-lg hover:text-white hover:bg-primary">
-                J4
-              </button>
-            </div>
-            
-          </div>
-        </div>
-        <!-- right -->
-        <div class="border-l-2 border-dashed border-gray-400 pl-4 ml-4">
-          <div>
-            <h3 class="font-semibold text-xl pb-6 border-b-2 border-dashed border-gray-400">
-              Selected Seat
-            </h3>
-          </div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer></footer>
-  <script src="./app.js"></script>
-</body>
-
+    </main>
+    <footer></footer>
+    <script src="./app.js"></script>
+  </body>
 </html>
