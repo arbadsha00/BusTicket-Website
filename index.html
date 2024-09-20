@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hockey</title>
+    <!-- daisyui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1DD100",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/374ce514ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+      .font-outfit {
+        font-family: "Outfit", system-ui;
+
+      }
+    </style>
+  </head>
+  <body class="font-outfit">
+    <header class="container mx-auto">
+      <!-- nav start -->
+      <div
+      class="navbar bg-base-100 flex justify-between items-center bg-transparent py-6"
+    >
+      <div>
+        <div class="flex items-center gap-2">
+          <img src="./images/logo.png" alt="">
+          <a class="text-3xl font-extrabold text-dark1">SOROL</a>
+        </div>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul
+          class="menu menu-horizontal px-1 text-base  text-dark3 space-x-10 font-semibold"
+        >
+          <li>
+            <a class="hover:text-primary duration-300 ease-in-out">Home</a>
+          </li>
+          <li>
+            <a class="hover:text-primary duration-300 ease-in-out"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-primary duration-300 ease-in-out"
+              >Destination</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-primary duration-300 ease-in-out">Search</a>
+          </li>
+          
+        </ul>
+      </div>
+       <div class="flex gap-5 justify-between">
+        
+        <a
+          class="hidden md:flex btn font-extrabold text-xl bg-[#e8fae5] text-primary border-2 border-primary"
+          >Bus
+          <img src="./images/bus-icon.png" alt="">
+        </a>
+        <div class="dropdown">
+          <div
+            tabindex="0"
+            role="button"
+            class="btn btn-ghost bg-primary  lg:hidden"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-dark2 right-0"
+          >
+            <li>
+              <a class="hover:text-primary duration-300 ease-in-out">Home</a>
+            </li>
+            <li>
+              <a class="hover:text-primary duration-300 ease-in-out">About</a>
+            </li>
+            <li>
+              <a class="hover:text-primary duration-300 ease-in-out">Destination</a>
+            </li>
+            <li>
+              <a class="hover:text-primary duration-300 ease-in-out">Search</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+       <!-- nav end -->
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
