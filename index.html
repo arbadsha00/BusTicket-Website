@@ -140,7 +140,7 @@
           </h3>
         </div>
 
-        <button class="btn bg-main text-xl font-bold">Buy Ticket</button>
+        <button id="buy" class="btn bg-main text-xl font-bold">Buy Ticket</button>
         <!-- card -->
         <div class="my-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div
@@ -298,7 +298,7 @@
           </div>
         </section>
         <!-- seat section -->
-        <div class="grid grid-cols-3 bg-white rounded-xl p-6 container mx-auto">
+        <div id="buy-section" class="grid grid-cols-3 bg-white rounded-xl p-6 container mx-auto">
           <!-- left -->
           <div class="col-span-2">
             <div>
@@ -724,37 +724,41 @@
                 <p class="font-medium text-lg">Price</p>
               </div>
               <div>
-                <ul id="seatLists" class="border-b-2 border-gray-400 pb-6 space-y-3">
-                  <li class="flex justify-between text-xl text-gray-500">
-                    <span>C2</span> <span>Economy</span> <span>550</span>
-                  </li>
-                  <li class="flex justify-between text-xl text-gray-500">
-                    <span>C2</span> <span>Economy</span> <span>550</span>
-                  </li>
-                </ul>
+                <ul
+                  id="seatLists"
+                  class="border-b-2 border-gray-400 pb-6 space-y-3"
+                ></ul>
               </div>
               <div>
                 <p class="flex justify-between text-xl font-bold mb-6">
                   <span>Total Price</span>
-                  <span>BDT <span id="totalPrice">100</span></span>
+                  <span>BDT <span id="totalPrice">0</span></span>
                 </p>
               </div>
               <div class="flex gap-2 mb-6">
-                <input id="couponText"
+                <input
+                  disabled
+                  id="couponText"
                   type="text"
                   placeholder="Any Coupon?"
                   class="input input-bordered w-full"
                 />
-                <button id="discountBtn" class="btn bg-main text-white">Apply</button>
+                <button
+                  disabled
+                  id="discountBtn"
+                  class="btn bg-main text-white disabled"
+                >
+                  Apply
+                </button>
               </div>
-              <div>
-                <p class="flex justify-between text-xl font-bold text-gray-500">
+              <div id="totalDiscount" class="hidden">
+                <p class="flex justify-between text-xl font-bold text-gray-500 ">
                   <span>Discount</span>
-                  <span>BDT <span id="discount">100</span></span>
+                  <span>BDT <span id="discount">0</span></span>
                 </p>
                 <p class="flex justify-between text-xl font-bold">
                   <span>Grand Total</span>
-                  <span>BDT <span id="grandPrice">100</span></span>
+                  <span>BDT <span id="grandPrice">0</span></span>
                 </p>
               </div>
             </div>
