@@ -140,7 +140,9 @@
           </h3>
         </div>
 
-        <button id="buy" class="btn bg-main text-xl font-bold">Buy Ticket</button>
+        <button id="buy" class="btn bg-main text-xl font-bold">
+          Buy Ticket
+        </button>
         <!-- card -->
         <div class="my-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div
@@ -298,7 +300,10 @@
           </div>
         </section>
         <!-- seat section -->
-        <div id="buy-section" class="grid grid-cols-3 bg-white rounded-xl p-6 container mx-auto">
+        <div
+          id="buy-section"
+          class="grid grid-cols-3 bg-white rounded-xl p-6 container mx-auto"
+        >
           <!-- left -->
           <div class="col-span-2">
             <div>
@@ -705,12 +710,12 @@
           <div class="border-l-2 border-dashed border-gray-400 pl-4 ml-4">
             <div>
               <h3
-                class="font-semibold text-xl pb-6 border-b-2 border-dashed border-gray-400"
+                class="font-semibold text-xl pb-6 border-b-2 border-dashed border-gray-400 mb-6"
               >
                 Selected Seat
               </h3>
             </div>
-            <div>
+            <div class="bg-light p-6 rounded-xl">
               <div class="flex justify-between my-6">
                 <p class="flex">
                   <span class="font-medium text-lg">Seat</span>
@@ -752,7 +757,7 @@
                 </button>
               </div>
               <div id="totalDiscount" class="hidden">
-                <p class="flex justify-between text-xl font-bold text-gray-500 ">
+                <p class="flex justify-between text-xl font-bold text-gray-500">
                   <span>Discount</span>
                   <span>BDT <span id="discount">0</span></span>
                 </p>
@@ -762,7 +767,67 @@
                 </p>
               </div>
             </div>
-            <div></div>
+            <div disabled class="space-y-3">
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text font-bold text-xl">Name*</span>
+                </div>
+                <input
+                disabled
+                  id="name"
+                  type="text"
+                  placeholder="Abdur Rahim"
+                  class="input input-bordered w-full"
+                />
+              </label>
+
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text font-bold text-xl">Number*</span>
+                </div>
+                <input
+                disabled
+                  id="number"
+                  type="text"
+                  placeholder="01234567890"
+                  class="input input-bordered w-full"
+                />
+              </label>
+
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text font-bold text-xl">Email</span>
+                </div>
+                <input
+                disabled
+                  id="email"
+                  type="text"
+                  placeholder="arb@gmail.com"
+                  class="input input-bordered w-full"
+                />
+              </label>
+              <button
+                disabled
+                id="next-btn"
+                class="btn w-full bg-main text-white"
+                onclick="my_modal_1.showModal()"
+              >
+                Next
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box flex flex-col items-center">
+                  <img src="./images/success.png" alt="" />
+                  <h3 class="text-xl font-bold text-main">Success</h3>
+                  <p class="py-4">Thank you for choosing SOROL</p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn bg-primary">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
           </div>
         </div>
       </section>

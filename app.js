@@ -1,4 +1,8 @@
 let seatArr = [];
+const names = document.getElementById("name");
+const email = document.getElementById("email");
+const number = document.getElementById("number");
+const nextBtn = document.getElementById("next-btn");
 const seatCount = document.getElementById("seatCount");
 const totalSeat = document.getElementById("totalSeat");
 const seatLists = document.getElementById("seatLists");
@@ -36,7 +40,15 @@ function seatSelected(event) {
     discountBtn.removeAttribute("disabled");
     totalDiscount.classList.remove("hidden");
     grandTotal.innerText = totalPrices;
-  }
+    }
+    if (seatArr.length > 0) {
+        names.removeAttribute("disabled");
+        email.removeAttribute("disabled");
+        number.removeAttribute("disabled");
+        nextBtn.removeAttribute("disabled");
+        
+        }
+    
 }
 
 document.getElementById("discountBtn").addEventListener("click", function () {
