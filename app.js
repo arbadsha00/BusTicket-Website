@@ -26,7 +26,7 @@ function seatSelected(event) {
     return alert("Maximum 4");
   }
   event.classList.add("bg-main", "text-white");
-  console.log(seatArr);
+
   seatCount.innerText = seatArr.length;
   totalSeats--;
   totalSeat.innerText = totalSeats;
@@ -40,15 +40,12 @@ function seatSelected(event) {
     discountBtn.removeAttribute("disabled");
     totalDiscount.classList.remove("hidden");
     grandTotal.innerText = totalPrices;
-    }
-    if (seatArr.length > 0) {
-        names.removeAttribute("disabled");
-        email.removeAttribute("disabled");
-        number.removeAttribute("disabled");
-        nextBtn.removeAttribute("disabled");
-        
-        }
-    
+  }
+  if (seatArr.length > 0) {
+    names.removeAttribute("disabled");
+    email.removeAttribute("disabled");
+    number.removeAttribute("disabled");
+  }
 }
 
 document.getElementById("discountBtn").addEventListener("click", function () {
@@ -70,5 +67,14 @@ document.getElementById("discountBtn").addEventListener("click", function () {
 });
 
 document.getElementById("buy").addEventListener("click", function () {
-    document.getElementById("buy-section").scrollIntoView({behavior:"smooth"})
-})
+  document.getElementById("buy-section").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("close-btn").addEventListener("click", function () {
+  console.log("ok");
+  location.reload();
+});
+document.getElementById("number").addEventListener("keyup", function () {
+  if (number.value.length > 0 && names.value.length > 0) {
+    nextBtn.removeAttribute("disabled");
+  } 
+});
